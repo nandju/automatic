@@ -3,22 +3,22 @@ import { CircleDot, Layers, Rocket } from "lucide-react"
 const services = [
   {
     id: 1,
-    title: "Discovery",
-    description: "Share your project details and help us see your vision.",
+    title: "Scan QR Code",
+    description: "Scannez rapidement les QR codes des souches et des bagages avec votre appareil mobile.",
     icon: CircleDot,
     color: "bg-[#7A7FEE]",
   },
   {
     id: 2,
-    title: "Build",
-    description: "We craft scalable, reliable solutions using the best tools for the job.",
+    title: "Vérification Automatique",
+    description: "Comparaison automatique des codes pour vérifier la conformité en temps réel.",
     icon: Layers,
     color: "bg-[#7A7FEE]",
   },
   {
     id: 3,
-    title: "Launch + Iterate",
-    description: "Seamlessly integrate, optimize, and expand as your business evolves.",
+    title: "Historique Complet",
+    description: "Consultez l'historique de toutes vos vérifications pour un suivi optimal.",
     icon: Rocket,
     color: "bg-[#7A7FEE]",
   },
@@ -28,12 +28,11 @@ export default function Services() {
   return (
     <section id="services" className="my-20">
       <h2 className="text-black dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
-        Unleash Your
-        <span className="block text-[#7A7FEE] dark:text-[#7A7FEE]">Business</span>
+        Fonctionnalités
+        <span className="block text-[#7A7FEE] dark:text-[#7A7FEE]">Principales</span>
       </h2>
       <p className="mb-12 max-w-2xl text-gray-700 dark:text-gray-300">
-        We build custom platforms and AI-powered tools to simplify your operations and help you scale. Our process makes
-        it easy to bring your ideas to life.
+        Une plateforme simple et efficace pour vérifier la conformité des bagages. Scannez, comparez et consultez l'historique de toutes vos vérifications en quelques clics.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

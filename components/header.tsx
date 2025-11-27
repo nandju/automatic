@@ -86,36 +86,28 @@ export default function Header() {
               {/* Desktop Navigation */}
               <nav className="hidden md:block">
                 <ul className="flex space-x-6">
-                  <li className="hidden md:block">
-                    <NavDropdown
-                      trigger="Resources"
-                      items={resourcesDropdownData}
-                      columns={2}
-                      className={pathname.startsWith("/resources") ? "text-[#7A7FEE] dark:text-[#7A7FEE]" : ""}
-                    />
-                  </li>
                   <li>
                     <Link
-                      href="/portfolio"
+                      href="/login"
                       className={`transition-colors ${
-                        pathname === "/portfolio"
+                        pathname === "/login"
                           ? "text-[#7A7FEE] dark:text-[#7A7FEE]"
                           : "text-black dark:text-white hover:text-[#7A7FEE] dark:hover:text-[#7A7FEE]"
                       }`}
                     >
-                      Portfolio
+                      Connexion
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/start"
+                      href="/historique"
                       className={`transition-colors ${
-                        pathname === "/start"
+                        pathname === "/historique"
                           ? "text-[#7A7FEE] dark:text-[#7A7FEE]"
                           : "text-black dark:text-white hover:text-[#7A7FEE] dark:hover:text-[#7A7FEE]"
                       }`}
                     >
-                      Start Project
+                      Historique
                     </Link>
                   </li>
                 </ul>

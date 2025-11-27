@@ -8,16 +8,18 @@ export default function CallToAction() {
         {/* Text content - takes full width on mobile */}
         <div className="w-full md:w-3/5 z-10">
           <h2 className="text-black dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
-            Your Next Big Idea <span className="text-[#7A7FEE] dark:text-[#7A7FEE]">Starts</span> Here
+            Prêt à <span className="text-[#7A7FEE] dark:text-[#7A7FEE]">Commencer</span> ?
           </h2>
           <p className="my-6 text-sm md:text-base max-w-md text-gray-700 dark:text-gray-300">
-            Have an idea or a problem that needs solving?
+            Accédez à la plateforme Automatic et commencez à vérifier vos bagages dès maintenant.
           </p>
           <p className="mb-6 text-sm md:text-base max-w-md text-gray-700 dark:text-gray-300">
-            Let's chat. We'll help you explore the best approach, map out a plan, and see if we're the right fit.
+            Simple, rapide et efficace. La vérification automatique n'a jamais été aussi facile.
           </p>
           <div>
-            <ContactFormButton />
+            <a href="/login" className="btn-primary">
+              Accéder à la plateforme
+            </a>
           </div>
         </div>
 

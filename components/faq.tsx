@@ -6,39 +6,39 @@ import { ChevronDown } from "lucide-react"
 const faqs = [
   {
     id: 1,
-    question: "What can I expect when we work together?",
+    question: "Comment utiliser la plateforme Automatic ?",
     answer:
-      "We start with a discovery call to understand your needs, then provide a detailed proposal with timeline and cost estimates. Once approved, we begin development with regular updates and feedback sessions.",
+      "Connectez-vous à votre compte, puis scannez d'abord le QR code de la souche (ticket), ensuite scannez le QR code du bagage. La plateforme comparera automatiquement les deux codes et affichera le résultat.",
   },
   {
     id: 2,
-    question: "How long do projects take to build?",
+    question: "Puis-je consulter l'historique de mes vérifications ?",
     answer:
-      "Project timelines vary based on complexity. Simple websites might take 2-4 weeks, while complex platforms can take 3-6 months. We provide detailed timelines during the proposal phase.",
+      "Oui, toutes vos vérifications sont enregistrées automatiquement dans l'historique. Vous pouvez y accéder à tout moment pour consulter les détails de chaque vérification, y compris la date, l'heure et le statut (conforme ou non conforme).",
   },
   {
     id: 3,
-    question: "What tools do you use to build?",
+    question: "La plateforme fonctionne-t-elle sur mobile ?",
     answer:
-      "We use modern frameworks like React, Next.js, and Node.js, along with AI tools and cloud services. Our stack is tailored to each project's specific requirements.",
+      "Oui, Automatic est une Progressive Web App (PWA) optimisée pour mobile. Vous pouvez l'utiliser directement depuis votre navigateur mobile ou l'installer comme une application.",
   },
   {
     id: 4,
-    question: "How much does a typical project cost?",
+    question: "Que signifie 'Conforme' ou 'Non conforme' ?",
     answer:
-      "Project costs vary widely based on requirements. Simple websites start around $5,000, while complex platforms can range from $25,000 to $100,000+. We provide detailed quotes after our discovery process.",
+      "Conforme signifie que les codes de la souche et du bagage correspondent exactement. Non conforme signifie qu'ils sont différents, indiquant une possible erreur dans l'association du bagage à la souche.",
   },
   {
     id: 5,
-    question: "How do you manage payments?",
+    question: "Mes données sont-elles sécurisées ?",
     answer:
-      "We typically work with a 50% upfront deposit and the remaining 50% upon project completion. For larger projects, we may establish milestone-based payment schedules.",
+      "Oui, toutes les données sont stockées localement sur votre appareil. Aucune information n'est transmise à des serveurs externes, garantissant la confidentialité de vos vérifications.",
   },
   {
     id: 6,
-    question: "Can you manage my app's technical support with users?",
+    question: "Puis-je utiliser la plateforme hors ligne ?",
     answer:
-      "Yes, we offer ongoing technical support and maintenance packages. These can include user support, bug fixes, feature updates, and performance monitoring.",
+      "Oui, une fois la page chargée, vous pouvez utiliser Automatic sans connexion internet. Toutes les fonctionnalités de scan et de vérification fonctionnent en mode hors ligne.",
   },
 ]
 
@@ -53,12 +53,11 @@ export default function Faq() {
     <section id="faq" className="my-20">
       <div className="card p-8 md:p-10 shadow-lg">
         <h2 className="text-black dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
-          Frequently Asked
-          <span className="block text-[#7A7FEE] dark:text-[#7A7FEE]">Questions</span>
+          Questions
+          <span className="block text-[#7A7FEE] dark:text-[#7A7FEE]">Fréquentes</span>
         </h2>
         <p className="mb-8 max-w-2xl text-gray-700 dark:text-gray-300">
-          Have questions about our services? Find answers to the most common questions and learn how our team can
-          enhance your creative process.
+          Vous avez des questions sur la plateforme Automatic ? Trouvez les réponses aux questions les plus courantes et découvrez comment utiliser efficacement notre système de vérification.
         </p>
 
         <div className="space-y-4">
