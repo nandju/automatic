@@ -34,7 +34,7 @@ export default function Footer() {
           )}
         </Link>
         <p className="text-sm text-gray-600 dark:text-gray-400 max-w-md mx-auto mb-8">
-          Your AI-first development partner building high-quality, scalable platforms.
+          Votre partenaire IA pour des plateformes de vérification sécurisées, performantes et évolutives
         </p>
 
         <p className="text-sm text-gray-500 dark:text-gray-400">

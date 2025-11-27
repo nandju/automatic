@@ -1,0 +1,53 @@
+{
+  "name": "Automatic - Vérification Bagage/Souche",
+  "short_name": "Automatic",
+  "description": "Plateforme de vérification automatique permettant de scanner et comparer les QR codes des souches (tickets) et des bagages pour vérifier leur conformité.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#7a7fee",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/automatic-favicon-no-bg.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/automatic-favicon-no-bg.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["utilities", "productivity"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Nouveau scan",
+      "short_name": "Scan",
+      "description": "Commencer une nouvelle vérification",
+      "url": "/scan-souche",
+      "icons": [
+        {
+          "src": "/automatic-favicon-no-bg.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Historique",
+      "short_name": "Historique",
+      "description": "Consulter l'historique des vérifications",
+      "url": "/historique",
+      "icons": [
+        {
+          "src": "/automatic-favicon-no-bg.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}
+
