@@ -3,13 +3,7 @@
 import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 import { CheckCircle2, XCircle, ArrowLeft, RotateCcw, History } from "lucide-react"
-
-interface VerificationResult {
-  date: string
-  codeSouche: string
-  codeBagage: string
-  conforme: boolean
-}
+import { saveVerification, type VerificationResult } from "@/utils/scan-history"
 
 export default function ResultatPage() {
   const [codeSouche, setCodeSouche] = useState<string | null>(null)
@@ -37,26 +31,9 @@ export default function ResultatPage() {
     setCodeSouche(souche)
     setCodeBagage(bagage)
 
-    // Comparer les codes
-    const conforme = souche === bagage
-    setIsConforme(conforme)
-
-    // Sauvegarder dans l'historique
-    const historique: VerificationResult[] = JSON.parse(
-      localStorage.getItem("historique") || "[]"
-    )
-
-    const nouvelleVerification: VerificationResult = {
-      date: new Date().toISOString(),
-      codeSouche: souche,
-      codeBagage: bagage,
-      conforme: conforme,
-    }
-
-    historique.unshift(nouvelleVerification)
-    // Garder seulement les 100 dernières vérifications
-    const historiqueLimite = historique.slice(0, 100)
-    localStorage.setItem("historique", JSON.stringify(historiqueLimite))
+    // Comparer les codes et sauvegarder dans l'historique
+    const verification = saveVerification(souche, bagage)
+    setIsConforme(verification.conforme)
   }, [router])
 
   const handleNewScan = () => {
